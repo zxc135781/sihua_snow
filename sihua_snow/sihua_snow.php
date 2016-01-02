@@ -107,7 +107,7 @@ if (c[d]) if (c[d].top < e || c[d].top + c[d].size + 1 > e + n) {
         createEl: function(a, b) {
             this.el = document.createElement("img");
             this.el.setAttribute
-("src", b + "http://ihux.cn/snow.gif"); 
+("src", b + "/plugins/sihua_snow/snow.gif"); 
             this.el.style.position = "absolute";
             this.el.style.display = "block";
             this.el.style.zIndex = "99999";
