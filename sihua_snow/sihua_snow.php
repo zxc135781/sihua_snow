@@ -57,7 +57,7 @@ b = document.documentElement.clientHeight ? document.documentElement: document.b
     function i(a) {
         this.parent = document.body;
         this.createEl(this.parent, a);
-        this.size = Math.random() * 8 + 8;
+        this.size = Math.random() * 5 + 5;
         this.el.style.width = Math.round(this.size) + "px";
         this.el.style.height = Math.round(this.size) + "px";
         this.maxLeft = document.body.offsetWidth - this.size;
@@ -119,11 +119,11 @@ this.angleDelta = -this.angleDelta;
             this.angle += this.angleDelta;
             this.left += this.speed * Math.cos(this.angle * Math.PI);
             this.top -= this.speed * Math.sin(this.angle * Math.PI);
-            if (this.left < 0) this.left = this.maxLeft;
+            if (this.left < 0) this.left = this.maxLeft - 3;
             else if (this.left > this.maxLeft) this.left = 0
         },
         draw: function() {
-            this.el.style.top = Math.round(this.top) + "px";
+            this.el.style.top = Math.round(this.top) - 5 + "px";
             this.el.style.left = Math.round(this.left) + "px"
         },
         remove: function() {
